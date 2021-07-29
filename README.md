@@ -1,7 +1,8 @@
-# README
+# rails-external-api-app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# test
+run ruby apitest.rb test from app direcory in bash
+
 
 Things you may want to cover:
 

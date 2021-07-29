@@ -1,14 +1,20 @@
 require 'rubygems'
 require 'httparty'
 
-class PostData
-    include HTTParty
-    base_uri "https://jsonplaceholder.typicode.com"
+# Class Test
 
-    def posts
-        self.class.get('/posts')
-    end
-end
+#class PostData
+    #include HTTParty
+    #base_uri "https://jsonplaceholder.typicode.com"
 
-post_data = PostData.new
-puts post_data.posts
+    #def posts
+    #    self.class.get('/posts')
+    #end
+#end
+#post_data = PostData.new
+#puts post_data.posts
+
+# Response test   
+
+response = HTTParty.get('https://api.stackexchange.com/2.2/questions?order=desc&sort=activity&site=stackoverflow')
+puts response.body
