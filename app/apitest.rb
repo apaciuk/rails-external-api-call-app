@@ -16,5 +16,5 @@ require 'httparty'
 
 # Response test   
 
-response = HTTParty.get('https://api.stackexchange.com/2.2/questions?order=desc&sort=activity&site=stackoverflow')
+response = HTTParty.get('https://jsonplaceholder.typicode.com/posts')
 puts response.body
